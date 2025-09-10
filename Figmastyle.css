@@ -6,26 +6,6 @@ body {
 }
 
 
-body {
-    font-size: 18px;
-}
-@media(max-width:768px){
-    body{
-        font-size: 16px;
-    }
-}
-.section{
-    flex-direction: column;
-}
-
-.section{
-    display: flex;
-    justify-content: space-between;
-}
-.container{
-    width: 90%;
-    margin: auto;
-}
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
@@ -500,3 +480,142 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity 0.3s;
 }
 
+
+/* ...existing code... */
+
+/* --- Mobile Responsive Styles --- */
+@media (max-width: 767px) {
+  .Top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 16px;
+    gap: 16px;
+  }
+  .Top-links {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .Top-actions {
+    gap: 10px;
+  }
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 16px;
+    gap: 24px;
+    text-align: center;
+  }
+  .hero-content, .hero-image-container {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .hero-image-container img {
+    border-radius: 8px;
+    border-width: 3px;
+  }
+  .about-us {
+    padding: 24px 8px;
+  }
+  .about-us-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .about-us-header h2 {
+    font-size: 1.5rem;
+  }
+  .cards-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    max-width: 100%;
+    min-width: 0;
+  }
+  .card-image-container {
+    height: 160px;
+    padding: 4px;
+    border-radius: 16px;
+  }
+  .card-content {
+    padding: 16px;
+  }
+  .good-company-section {
+    padding: 32px 8px;
+    margin-bottom: 24px;
+  }
+  .good-company-header h2 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .good-company-header p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .testimonial-card {
+    padding: 16px;
+  }
+  .toolbox-section,
+  .identity-solution-section {
+    flex-direction: column;
+    padding: 32px 8px;
+    gap: 24px;
+  }
+  .toolbox-content,
+  .toolbox-image-container,
+  .identity-image-container,
+  .identity-text-content {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .toolbox-image-container img,
+  .identity-image-container img {
+    height: 220px;
+    padding-top: 0;
+  }
+  .toolbox-content h2,
+  .identity-text-content h2 {
+    font-size: 1.5rem;
+  }
+  .footer {
+    padding: 32px 8px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-column {
+    margin-bottom: 16px;
+  }
+}
+
+/* --- Desktop Large Screens (already present, but you can add more if needed) --- */
+@media (min-width: 1200px) {
+  .about-us {
+    padding: 60px 0;
+  }
+  .good-company-section,
+  .toolbox-section,
+  .identity-solution-section {
+    padding: 100px 120px;
+  }
+  .footer {
+    padding: 80px 120px;
+  }
+}
+
+/* ...existing code... */
