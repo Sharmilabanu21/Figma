@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/Figma.html" }
+    { "source": "/(.*)", "destination": "/CloneWebsite.html" }
   ]
 }
